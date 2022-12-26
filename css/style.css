@@ -27,7 +27,7 @@ ol {
   margin: 0;
   padding: 0;
 }
-.img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -50,11 +50,9 @@ ol {
 .portfolio-button:focus {
   color: var(--logo-color);
 }
-
 .list {
   list-style: none;
 }
-
 .header {
   color: var(--primary-text-color);
   background-color: var(--white-color);
@@ -119,8 +117,8 @@ ol {
 .hero {
   background-color: var(--primary-text-color);
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-weight: 700;
@@ -184,7 +182,7 @@ ol {
   padding-bottom: 120px;
 }
 .todo-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
@@ -207,14 +205,18 @@ ol {
 }
 .team-title {
   font-size: 36px;
+  font-weight: 700;
+  line-height: calc(40 / 36);
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
   margin-bottom: 72px;
 }
 .team-item-content {
   padding: 32px 16px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .team-list {
   display: flex;
@@ -270,6 +272,7 @@ ol {
 .portfolio-button:hover {
   color: var(--second-img-color);
   background-color: var(--logo-color);
+  border-color: transparent;
 }
 .cards-list {
   display: flex;
@@ -306,7 +309,7 @@ ol {
 .footer {
   background-color: var(--primary-text-color);
   padding: 100px 0;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
