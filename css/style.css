@@ -27,6 +27,11 @@ ol {
   margin: 0;
   padding: 0;
 }
+.img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -53,7 +58,6 @@ ol {
 .header {
   color: var(--primary-text-color);
   background-color: var(--white-color);
-  padding: 24px;
   border-bottom: 1px solid var(--white-color);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
@@ -70,6 +74,9 @@ ol {
   letter-spacing: 0.03em;
   color: var(--logo-color);
   margin-right: 77px;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-dark {
   color: var(--primary-text-color);
@@ -92,11 +99,12 @@ ol {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .contact-list {
   display: flex;
-}
-.contact-item > {
 }
 .contact-item {
 }
@@ -104,27 +112,24 @@ ol {
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--secondary-text-color);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .hero {
   background-color: var(--primary-text-color);
   text-align: center;
-  padding: 192px 0;
-  margin-bottom: 120px;
-}
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .hero-title {
-  color: var(--white-color);
-  font-weight: 500;
+  font-weight: 700;
+  width: 507px;
   font-size: 56px;
   line-height: calc(60 / 56);
   letter-spacing: 0.02em;
-  margin: 0;
-  margin-bottom: 48px;
-  width: 492px;
+  color: var(--white-color);
+  margin: 0 auto 48px;
 }
 .hero-button {
   font-family: "Roboto";
@@ -143,7 +148,8 @@ ol {
 }
 .features {
   color: var(--white-color);
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .features-title {
   color: var(--primary-text-color);
@@ -175,7 +181,7 @@ ol {
 }
 .todo {
   color: var(--second-img-color);
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .todo-title {
   font-weight: 500;
@@ -224,6 +230,7 @@ ol {
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-position {
   font-size: 16px;
@@ -231,39 +238,34 @@ ol {
   letter-spacing: 0.02em;
 }
 .portfolio {
-}
-.portfolio li:not(:last-child) {
-  margin-right: 24px;
-}
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 72px;
-  margin-top: 96px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .portfolio-title {
 }
 .portfolio-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  gap: 24px;
 }
 .list {
 }
 .portfolio-item {
 }
 .portfolio-button {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: inherit;
   font-size: 16px;
   line-height: calc(24 / 16);
-  letter-spacing: 0.04em;
-  background-color: var(--second-img-color);
-  color: var(--logo-color);
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 12px 24px;
-  display: inline-block;
   text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--logo-color);
+  padding: 12px 24px;
+  background: var(--second-img-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .portfolio-button:hover {
   color: var(--second-img-color);
@@ -280,9 +282,10 @@ ol {
 }
 .cards-item-content {
   padding: 32px 16px;
-  display: flex;
   flex-direction: column;
-  box-shadow: 0px 1px 6px 0px #2e2f4214;
+  border-left: 0.5px;
+  border-bottom: 0.5px;
+  border-right: 0.5px;
 }
 .cards-img {
 }
@@ -292,6 +295,7 @@ ol {
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 .cards-text {
   color: var(--link-color);
@@ -302,10 +306,19 @@ ol {
 .footer {
   background-color: var(--primary-text-color);
   padding: 100px 0;
-  margin-top: 120px;
+  padding-top: 120px;
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
 }
 .footer-logo {
   color: var(--footer-text-color);
+  text-transform: uppercase;
 }
 .footer-text {
   font-size: 16px;
